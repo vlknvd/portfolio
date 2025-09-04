@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <section class="promo">
+        <div class="promo__titles">
+          <h1 class="promo__title">Щербина Дарья</h1>
+          <p class="promo__text">Frontend-developer</p>
+        </div>
+        <img class="promo__img" src="./assets/img/photo.jpg" alt="Darya" />
+      </section>
+      <section class="projects">
+        <h2 class="projects__title">мои проекты</h2>
+        <ul class="projects__list">
+          <li class="project-card" data-aos="fade-up">
+            <a
+              href="https://vlknvd.github.io/ceramic/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-card__image-link"
+            >
+              <img
+                src="./assets/img/ceramic-project.png"
+                alt="Скриншот проекта Ceramic"
+                class="project-card__image"
+              />
+            </a>
+            <div class="project-card__info">
+              <h3 class="project-card__title">Ceramic Soul</h3>
+              <p class="project-card__description">
+                Учебный MPA-проект, реализованный с использованием Vite,
+                JavaScript (ES6+), SCSS и HTML5. В сборке применён Rollup для
+                оптимизации и создания компактных бандлов. Проект адаптивен и
+                развёрнут на GitHub Pages.
+              </p>
+              <ul class="project-card__tech-list">
+                <li class="project-card__tech-item">JavaScript (ES6+)</li>
+                <li class="project-card__tech-item">Vite</li>
+                <li class="project-card__tech-item">SCSS</li>
+                <li class="project-card__tech-item">GitHub Pages</li>
+                <li class="project-card__tech-item">GitHub Actions</li>
+                <li class="project-card__tech-item">HTML5</li>
+                <li class="project-card__tech-item">CSS3</li>
+              </ul>
+            </div>
+          </li>
+          <li class="project-card" data-aos="fade-up">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-card__image-link"
+            >
+              <img
+                src="./assets/img/train-project.png"
+                alt="Скриншот проекта Ceramic"
+                class="project-card__image"
+              />
+            </a>
+            <div class="project-card__info">
+              <h3 class="project-card__title">Сайт бронирования ЖД билетов</h3>
+              <p class="project-card__description">
+                Учебное SPA-приложение на React для поиска и бронирования
+                железнодорожных билетов. Реализована маршрутизация (React
+                Router), управление состоянием (Redux), работа с серверными
+                данными.
+              </p>
+              <ul class="project-card__tech-list">
+                <li class="project-card__tech-item">HTML</li>
+                <li class="project-card__tech-item">CSS</li>
+                <li class="project-card__tech-item">React</li>
+                <li class="project-card__tech-item">Redux</li>
+                <li class="project-card__tech-item">React Router</li>
+                <li class="project-card__tech-item">Fetch API</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
