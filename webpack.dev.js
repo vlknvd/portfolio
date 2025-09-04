@@ -5,8 +5,8 @@ const path = require('path');
 module.exports = merge(common, {
   mode: 'development',
   output: {
-    filename: 'bundle.js', // без хеша
-    assetModuleFilename: 'assets/[name][ext]', // картинки без хеша
+    filename: 'bundle.js',
+    assetModuleFilename: 'assets/[name][ext]',
   },
   devServer: {
     static: {
@@ -21,5 +21,5 @@ module.exports = merge(common, {
       overlay: true,
     },
   },
-  devtool: 'inline-source-map', // чтобы было удобно отлаживать
+  devtool: 'inline-source-map',
 });

@@ -5,12 +5,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    filename: 'bundle.[contenthash].js', // с хешем для кеширования
-    assetModuleFilename: 'assets/[name].[contenthash][ext]', // картинки тоже с хешем
+    filename: 'bundle.[contenthash].js',
+    assetModuleFilename: 'assets/[name].[contenthash][ext]',
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css', // css с хешем
+      filename: '[name].[contenthash].css',
     }),
   ],
   optimization: {
@@ -19,5 +19,5 @@ module.exports = merge(common, {
     },
     minimize: true,
   },
-  devtool: false, // или 'source-map', если нужны сорсмапы в продакшене
+  devtool: false,
 });
