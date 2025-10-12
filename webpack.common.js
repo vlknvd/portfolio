@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     assetModuleFilename: 'assets/[name][ext]',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -75,9 +76,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      publicPath: '/',
+      // publicPath: '/',
     }),
-    new MiniCssExtractPlugin(),
+    // new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
   ],
 };
