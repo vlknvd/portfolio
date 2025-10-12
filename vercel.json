@@ -1,10 +1,12 @@
 {
-  "builds": [
+  "routes": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|webp|woff2?|ttf|eot|otf))$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+  ]
 }
