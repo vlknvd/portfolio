@@ -14,35 +14,79 @@
   <body>
     <div id="app">
       <section class="promo">
-        <div class="promo__titles">
-          <h1 class="promo__title">Щербина Дарья</h1>
-          <p class="promo__text">Frontend-developer</p>
+        <div class="promo__overlay">
+          <div class="promo__titles">
+            <h1 class="promo__title">Щербина Дарья</h1>
+            <p class="promo__text">Frontend-developer</p>
+          </div>
         </div>
-        <img class="promo__img" src="./assets/img/photo.jpg" alt="Darya" />
+      </section>
+      <section class="about">
+        <img
+          class="about__img"
+          src="./assets/img/photo.jpg"
+          alt="Darya"
+          data-aos="fade-right"
+        />
+        <div class="about__content" data-aos="fade-left">
+          <h2 class="about__title">Обо мне</h2>
+          <p class="about__text">
+            Меня зовут Дарья, мне 25 лет. Уже более трёх лет я увлечённо изучаю
+            frontend-разработку. Имею высшее инженерное образование и прошла
+            курсы профессиональной переподготовки в сфере веб-разработки. За это
+            время я успела поработать над реальным коммерческим проектом, что
+            дало мне практический опыт и понимание задач на продакшене.
+            Продолжаю развиваться и стремлюсь создавать чистый, адаптивный и
+            понятный код.
+          </p>
+          <ul class="about__skills">
+            <li data-aos="fade-up" data-aos-delay="0">HTML</li>
+            <li data-aos="fade-up" data-aos-delay="100">CSS</li>
+            <li data-aos="fade-up" data-aos-delay="200">JavaScript</li>
+            <li data-aos="fade-up" data-aos-delay="300">React</li>
+            <li data-aos="fade-up" data-aos-delay="400">Redux</li>
+            <li data-aos="fade-up" data-aos-delay="500">Git</li>
+            <li data-aos="fade-up" data-aos-delay="600">Figma</li>
+            <li data-aos="fade-up" data-aos-delay="700">Webpack</li>
+            <li data-aos="fade-up" data-aos-delay="800">Vite</li>
+            <li data-aos="fade-up" data-aos-delay="900">Адаптивная верстка</li>
+            <li data-aos="fade-up" data-aos-delay="950">
+              Кроссбраузерная верстка
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="projects">
         <h2 class="projects__title">мои проекты</h2>
         <ul class="projects__list">
           <li class="project-card" data-aos="fade-up">
-            <a
-              href="https://www.service-product-rnd.ru/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card__image-link"
-            >
-              <img
-                src="./assets/img/sp-project.png"
-                alt="Service-product"
-                class="project-card__image"
-              />
-            </a>
             <div class="project-card__info">
               <h3 class="project-card__title">Service Product</h3>
               <p class="project-card__description">
-                Коммерческий SPA-проект для дистрибьютора продуктов питания из Ростова-на-Дону. Выполнен с нуля с акцентом на производительность, адаптивность и поддерживаемость кода.
-Приложение построено на компонентной архитектуре с использованием React и SCSS-модулей. В проекте используется кастомная сборка на Webpack с оптимизированной конфигурацией для продакшена. Организован деплой через Vercel с поддержкой CI/CD.
-Проект в активной поддержке: регулярно обновляется, масштабируется, дорабатывается по запросу клиента.
+                Коммерческий SPA-проект для дистрибьютора продуктов питания из
+                Ростова-на-Дону. Выполнен с нуля с акцентом на
+                производительность, адаптивность и поддерживаемость кода.
+                Приложение построено на компонентной архитектуре с
+                использованием React и SCSS-модулей. В проекте используется
+                кастомная сборка на Webpack с оптимизированной конфигурацией для
+                продакшена. Организован деплой через Vercel с поддержкой CI/CD.
+                Проект в активной поддержке: регулярно обновляется,
+                масштабируется, дорабатывается по запросу клиента.
               </p>
+            </div>
+            <div class="project-card__content">
+              <a
+                href="https://www.service-product-rnd.ru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__image-link"
+              >
+                <img
+                  src="./assets/img/sp-project.png"
+                  alt="Service-product"
+                  class="project-card__image"
+                />
+              </a>
               <ul class="project-card__tech-list">
                 <li class="project-card__tech-item">React</li>
                 <li class="project-card__tech-item">Webpack</li>
@@ -55,62 +99,80 @@
                 <li class="project-card__tech-item">GitHub</li>
                 <li class="project-card__tech-item">Адаптивная вёрстка</li>
                 <li class="project-card__tech-item">SEO-оптимизация</li>
-                <li class="project-card__tech-item">Кроссбраузерная совместимость</li>
+                <li class="project-card__tech-item">
+                  Кроссбраузерная совместимость
+                </li>
               </ul>
             </div>
           </li>
-          <li class="project-card project-card__reverse" data-aos="fade-up">
-            <a
-              href="https://vlknvd.github.io/ceramic/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card__image-link"
-            >
-              <img
-                src="./assets/img/ceramic-project.png"
-                alt="Ceramic"
-                class="project-card__image"
-              />
-            </a>
+          <li class="project-card" data-aos="fade-up">
             <div class="project-card__info">
               <h3 class="project-card__title">Ceramic Soul</h3>
               <p class="project-card__description">
-                Учебный SPA-проект, реализованный с использованием Vite,
-                JavaScript (ES6+), SCSS и HTML5. В сборке применён Rollup для
-                оптимизации и создания компактных бандлов. Проект адаптивен и
-                развёрнут на GitHub Pages.
+                Учебный одностраничный веб-проект (SPA), созданный с
+                использованием современного стека: Vite, JavaScript (ES6+), SCSS
+                и HTML5. Проект разработан с нуля в учебных целях, с упором на
+                семантику, адаптивность и производительность интерфейса. В
+                качестве инструмента сборки использован Vite, основанный на
+                Rollup, что позволило добиться быстрой разработки и компактного
+                финального бандла. Также в процессе работы был настроен
+                собственный конфиг для продакшн-сборки с оптимизацией ассетов,
+                кода и модулей.
               </p>
+            </div>
+            <div class="project-card__content">
+              <a
+                href="https://vlknvd.github.io/ceramic/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__image-link"
+              >
+                <img
+                  src="./assets/img/ceramic-project.png"
+                  alt="Ceramic"
+                  class="project-card__image"
+                />
+              </a>
               <ul class="project-card__tech-list">
                 <li class="project-card__tech-item">JavaScript (ES6+)</li>
                 <li class="project-card__tech-item">Vite</li>
+                <li class="project-card__tech-item">Rollup</li>
                 <li class="project-card__tech-item">SCSS</li>
                 <li class="project-card__tech-item">GitHub Pages</li>
                 <li class="project-card__tech-item">GitHub Actions</li>
                 <li class="project-card__tech-item">HTML5</li>
                 <li class="project-card__tech-item">CSS3</li>
+                <li class="project-card__tech-item">Адаптивная вёрстка</li>
+                <li class="project-card__tech-item">Кроссбраузерность</li>
               </ul>
             </div>
           </li>
           <li class="project-card" data-aos="fade-up">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card__image-link"
-            >
-              <img
-                src="./assets/img/train-project.png"
-                alt="Train"
-                class="project-card__image"
-              />
-            </a>
             <div class="project-card__info">
               <h3 class="project-card__title">Сайт бронирования ЖД билетов</h3>
               <p class="project-card__description">
                 Учебное SPA-приложение на React для поиска и бронирования
-                железнодорожных билетов. Реализована маршрутизация (React
-                Router), управление состоянием (Redux), работа с серверными
-                данными.
+                железнодорожных билетов с использованием React Router для
+                маршрутизации и Redux для управления состоянием. Проект включает
+                работу с серверными данными, фильтрацию и сортировку
+                результатов, а также адаптивный дизайн, обеспечивающий удобство
+                использования на различных устройствах. Компонентный подход и
+                оптимизация производительности делают интерфейс быстрым и
+                удобным.
               </p>
+            </div>
+            <div class="project-card__content">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__image-link"
+              >
+                <img
+                  src="./assets/img/train-project.png"
+                  alt="Train"
+                  class="project-card__image"
+                />
+              </a>
               <ul class="project-card__tech-list">
                 <li class="project-card__tech-item">HTML</li>
                 <li class="project-card__tech-item">SASS</li>
@@ -118,30 +180,43 @@
                 <li class="project-card__tech-item">Redux</li>
                 <li class="project-card__tech-item">React Router</li>
                 <li class="project-card__tech-item">Fetch API</li>
+                <li class="project-card__tech-item">JavaScript (ES6+)</li>
+                <li class="project-card__tech-item">Git</li>
+                <li class="project-card__tech-item">GitHub</li>
+                <li class="project-card__tech-item">Webpack</li>
+                <li class="project-card__tech-item">ESLint</li>
               </ul>
             </div>
           </li>
-          <li class="project-card project-card__reverse" data-aos="fade-up">
-            <a
-              href="https://vlknvd.github.io/abenland/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card__image-link"
-            >
-              <img
-                src="./assets/img/abenland-project.png"
-                alt="Abenland"
-                class="project-card__image"
-              />
-            </a>
+          <li class="project-card" data-aos="fade-up">
             <div class="project-card__info">
               <h3 class="project-card__title">Abenland</h3>
               <p class="project-card__description">
-                Учебное одностраничное приложение (SPA), разработанное с
-                использованием Vite, JavaScript (ES6+), SCSS и HTML5. Сборка с
-                Rollup для оптимизации и минификации бандлов. Статические
-                ресурсы в public, корректные пути для деплоя на GitHub Pages.
+                Учебный проект — одностраничный сайт портфолио, выполненный с
+                использованием современного фронтенд-стека. В работе применён
+                компонентный подход к верстке с использованием SASS для удобной
+                и масштабируемой стилизации, а сборка организована через Vite
+                для быстрой и эффективной разработки. Использован чистый,
+                семантический HTML5 и современный JavaScript (ES6+) для создания
+                интерактивных элементов и анимаций. Проект адаптивен и
+                оптимизирован для разных устройств и экранов. В процессе работы
+                особое внимание уделялось структуре кода, удобству поддержки и
+                производительности. Развернут и размещён на GitHub Pages.
               </p>
+            </div>
+            <div class="project-card__content">
+              <a
+                href="https://vlknvd.github.io/abenland/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__image-link"
+              >
+                <img
+                  src="./assets/img/abenland-project.png"
+                  alt="Abenland"
+                  class="project-card__image"
+                />
+              </a>
               <ul class="project-card__tech-list">
                 <li class="project-card__tech-item">Vite</li>
                 <li class="project-card__tech-item">SASS</li>
@@ -157,9 +232,22 @@
       <footer class="footer">
         <p>Дарья Щербина</p>
         <div class="contacts">
-          <a href="tel:+79888980988" aria-label="Телефон"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/>
+          <a
+            href="tel:+79888980988"
+            aria-label="Телефон"
+            class="contacts__link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"
+              />
             </svg>
             +7 (988) 898-09-88
           </a>
@@ -168,12 +256,42 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Telegram"
+            class="contacts__link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M9.04 15.59l-.39 4.42c.56 0 .8-.24 1.1-.53l2.63-2.5 5.46 4c1 .56 1.7.27 1.95-.93L21.6 6.43c.26-1.2-.43-1.68-1.1-1.4L3.94 11.13c-1.15.44-1.13 1.07-.2 1.37l4.64 1.45 10.78-6.78c.5-.3.95-.13.58.18"/>
-            </svg> 
+              <path
+                d="M9.04 15.59l-.39 4.42c.56 0 .8-.24 1.1-.53l2.63-2.5 5.46 4c1 .56 1.7.27 1.95-.93L21.6 6.43c.26-1.2-.43-1.68-1.1-1.4L3.94 11.13c-1.15.44-1.13 1.07-.2 1.37l4.64 1.45 10.78-6.78c.5-.3.95-.13.58.18"
+              />
+            </svg>
             @vlknvd
-            </a>
+          </a>
+          <a
+            href="https://github.com/vlknvd"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="contacts__link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.21 11.41c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.34-1.76c-1.1-.75.09-.73.09-.73a2.52 2.52 0 011.84 1.24 2.54 2.54 0 003.47.99 2.54 2.54 0 01.76-1.6c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 011.24-3.21 4.3 4.3 0 01.12-3.17s1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 01.12 3.17 4.64 4.64 0 011.24 3.21c0 4.61-2.8 5.63-5.48 5.92a2.85 2.85 0 01.82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+            vlknvd
           </a>
         </div>
       </footer>
